@@ -44,7 +44,7 @@ function currentTemp(response) {
   let h1 = document.querySelector("#cityName");
   h1.innerHTML = `${city}`;
 
-  
+  //console.log(`${city} ${h2}°c`);
 }
 
 function search(event) {
@@ -58,7 +58,10 @@ function search(event) {
   axios.get(apiUrl).then(currentTemp);
 }
 
+//let h1 = document.querySelector("h1");
 
+// h1.innerHTML = `${city}`;
+// h1.innerHTML = `${searchInput} <i class="fa-sharp fa-solid fa-location-dot"></i>`;
 
 let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", search);
@@ -66,4 +69,15 @@ cityForm.addEventListener("submit", search);
 let apiKey = "c1cf45e5f52d38632d095b6ef054c012";
 let units = "metric";
 
-
+//let apiKey = "c1cf45e5f52d38632d095b6ef054c012"
+//let lan = position.cords.latitude;
+//let log = position.cords.longitude;
+//let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`
+// axios.get(url).then(currentTemp)
+//}
+//function clickButton(event){
+//event.preventDefault();
+//navigator.geolocation.getCurrentPosition(currentLocation);
+//}
+//let input =document.querySelector("#current-button");
+//input.addEventListener("submit", clickButton);
