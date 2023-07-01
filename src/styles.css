@@ -44,9 +44,13 @@ h2 {
   font-size: 35px;
   text-align: center;
 }
-.units {
+h2 .units {
+  position: relative;
   font-size: 19px;
+  top: -14px;
+  font-size: 16px;
 }
+
 
 ul {
   margin: 0px;
@@ -56,4 +60,7 @@ ul {
 }
 .container text center {
   font-size: 29px;
+}
+.codeBy {
+  text-align: center;
 }
