@@ -1,14 +1,39 @@
 //feature1
 
-let nowDate = new Date();
+//let nowDate = new Date();
 
-let currentDate = document.querySelector("#date");
-let hours = nowDate.getHours();
-if (hours < 10) {
+//let currentDate = document.querySelector("#date");
+//let hours = nowDate.getHours();
+//if (hours < 10) {
+  //hours = `0${hours}`;
+//}
+//let minutes = nowDate.getMinutes();
+//if (minutes < 10) {
+  //minutes = `0${minutes}`;
+//}
+//let days = [
+  //"Sunday",
+  //"Monday",
+  //"Tuesday",
+  //"Wednesday",
+  //"Thursday",
+  //"Friday",
+  //"Saturday",
+//];
+
+//let day = days[nowDate.getDay()];
+
+//currentDate.innerHTML = `${day} ${hours}:${minutes}`;
+
+// search engine homework
+function formatDate(timestamp){
+let date = new Date(timestamp);
+let hours = date.getHours();
+if (hours < 10 ) {
   hours = `0${hours}`;
-}
-let minutes = nowDate.getMinutes();
-if (minutes < 10) {
+} 
+let minutes = date.getMinutes();
+if (minutes < 10){
   minutes = `0${minutes}`;
 }
 let days = [
@@ -20,17 +45,19 @@ let days = [
   "Friday",
   "Saturday",
 ];
-
-let day = days[nowDate.getDay()];
-
-currentDate.innerHTML = `${day} ${hours}:${minutes}`;
-
-// search engine homework
+let day = days[date.getDay()];
+return`Last updated: ${day} ${hours}:${minutes}`;
+}
 
 function currentTemp(response) {
   let temperature = Math.round(response.data.main.temp);
   let h2 = document.querySelector("#temperature");
   h2.innerHTML = `${temperature}`;
+
+
+  let dateElement = document.querySelector("#date");
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+
 
   let humidityRound = Math.round(response.data.main.humidity);
   let humidity = document.querySelector("#humidity");
