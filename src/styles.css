@@ -55,6 +55,7 @@ h2 .units {
 ul {
   margin: 0px;
   padding: 0px;
+  text-transform: capitalize;
   list-style-type: none;
   text-emphasis: none;
 }
