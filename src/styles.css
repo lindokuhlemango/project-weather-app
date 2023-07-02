@@ -31,12 +31,12 @@ body {
   margin-right: 10px;
   font-size: 18px;
 }
+
 h1 {
   font-size: 40px;
   text-align: center;
 }
 .sunnyicon {
-  font-size: 60px;
   text-align: center;
   align-items: center;
 }
@@ -62,6 +62,6 @@ ul {
 .container text center {
   font-size: 29px;
 }
-.codeBy {
+p.codeBy {
   text-align: center;
 }

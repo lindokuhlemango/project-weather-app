@@ -69,8 +69,16 @@ function currentTemp(response) {
 
   let city = response.data.name;
   let h1 = document.querySelector("#cityName");
-  h1.innerHTML = `${city}`;
+  h1.innerHTML = `${city} <img src="https://img.icons8.com/?size=512&id=3723&format=png" width="40px" alt="loctaion"/>`;
+
+  let mainicon = document.querySelector("#mainicon");
+  mainicon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  mainicon.setAttribute("alt", response.data.weather[0].description);
+  
+
 }
+
+
 
 function search(event) {
   event.preventDefault();
@@ -83,12 +91,9 @@ function search(event) {
   axios.get(apiUrl).then(currentTemp);
 }
 
-
-
 let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", search);
 
 let apiKey = "c1cf45e5f52d38632d095b6ef054c012";
 let units = "metric";
-
 

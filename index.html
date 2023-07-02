@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 
@@ -20,22 +21,26 @@
         <div class="page">
             <div class="topnav">
                 <form id="city-form">
-                    <input type="searchCity" type="text" placeholder="Enter your city..." autocomplete="off"
+                    <input type="searchCity" type="search" placeholder="Enter your city..." autocomplete="off"
                         autofocus="on" id="city-input" />
-
-                    <input type="submit" value="Search" />
-                    <input type="submit" value="Current" id="current-button" />
+                    <input type="submit" value="search" width="100%" />
                 </form>
 
             </div>
             <br />
             <h1 id="cityName">
                 Johanessburg
-                <i id="location" class="fa-sharp fa-solid fa-location-dot"></i>
+                <img src="https://img.icons8.com/?size=512&id=3723&format=png" width="40px" alt="loctaion"/>
+        
             </h1>
             </br>
-            <div class=" sunnyicon">
-                <i class="fa-solid fa-sun"></i>
+
+            <div class="sunnyicon">
+                <img
+                src="http://openweathermap.org/img/wn/01d@2x.png" width="100px"
+                alt="sunny"
+                id="mainicon"
+                />
             </div>
 
             <h2>
@@ -46,7 +51,7 @@
             <br>
             
             <ul>
-                <li id="date">Last updated: Saturday 21:19 </li>
+                <li id="date">Last updated: Saturday 21:15</li>
                 <li id="description"> Sunny</li>
                 <li id="humidity"> Humidity 50% </li>
 
@@ -61,41 +66,44 @@
                         <br>
                         16°/24°
                         <br>
-                        <i class="fa-solid fa-cloud-sun"></i>
+                        <img src="http://openweathermap.org/img/wn/01d@2x.png" width="40px" alt="sunny" />
                     </div>
                     <div class="col">
                         Tue
                         <br>
                         15°/18°
                         <br>
-                        <i class="fa-solid fa-cloud"></i>
+                        <img src="http://openweathermap.org/img/wn/02d@2x.png" width="40px"
+                        alt="partly cloudy"/>
                     </div>
                     <div class="col">
                         Wed
                         14°/16°
                         <br>
-                        <i class="fa-solid fa-cloud-rain"></i>
+                        <img src="http://openweathermap.org/img/wn/04d@2x.png" width="40px"
+                        alt="cloudy"/>
                     </div>
                     <div class="col">
                         Thu
                         <br>
                         14°/15°
                         <br>
-                        <i class="fa-solid fa-cloud-rain"></i>
+                        <img src="http://openweathermap.org/img/wn/09d@2x.png" width="40px"
+                        alt="rain"/>
                     </div>
                     <div class="col">
                         Fri
                         <br>
                         16°/26°
                         <br>
-                        <i class="fa-solid fa-sun"></i>
+                        <img src="http://openweathermap.org/img/wn/01d@2x.png" width="40px" alt="sunny" />
                     </div>
                 </div>
             </div>
 
         </div>
     </div> 
-     Coded by Lindokuhle Mangco <a href ="https://github.com/lindokuhlemango/project-weather-app"> open-source-code</a> 
+    <p class="codeBy"> Coded by Lindokuhle Mangco <a href ="https://github.com/lindokuhlemango/project-weather-app"> open-source-code</a> </p>
     <script src="src/index.js"></script>
 </body>
 </html>
