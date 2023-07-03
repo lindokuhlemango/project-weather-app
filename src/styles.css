@@ -47,8 +47,9 @@ h2 {
 h2 .units {
   position: relative;
   font-size: 19px;
-  top: -14px;
-  font-size: 16px;
+  top: -16px;
+  font-size: 15px;
+  text-emphasis: none;
 }
 
 

@@ -23,7 +23,7 @@
                 <form id="city-form">
                     <input type="searchCity" type="search" placeholder="Enter your city..." autocomplete="off"
                         autofocus="on" id="city-input" />
-                    <input type="submit" value="search" width="100%" />
+                    <input type="submit" value="search" class="search"/>
                 </form>
 
             </div>
@@ -45,7 +45,9 @@
 
             <h2>
                 <span class="temperature" id="temperature"> 23</span>
-                <span class="units">°C |<a href="#">°F</a>
+                <span class="units"
+                ><a href="#"id="celcius-link">°C </a> |
+                <a href="#"id="fahrenheit-link">°F</a></span>
 
             </h2>
             <br>
@@ -88,7 +90,7 @@
                         <br>
                         14°/15°
                         <br>
-                        <img src="http://openweathermap.org/img/wn/09d@2x.png" width="40px"
+                        <img src="http://openweathermap.org/img/wn/09d@2x.png" width="45px"
                         alt="rain"/>
                     </div>
                     <div class="col">
