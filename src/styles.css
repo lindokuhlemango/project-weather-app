@@ -8,7 +8,7 @@ body {
 }
 .container .page {
   width: 90%;
-  max-width: 490px;
+  max-width: 495px;
   background: linear-gradient(135deg, #00feba, #5b548a);
   color: #fff;
   margin: 100px auto 0;
@@ -28,8 +28,12 @@ body {
   background: #ebfffc;
   padding: 6px 6px;
   border-radius: 25px;
-  margin-right: 10px;
+  margin-right: 15px;
   font-size: 18px;
+}
+
+.search {
+width: 100px;
 }
 
 h1 {
@@ -65,4 +69,19 @@ ul {
 }
 p.codeBy {
   text-align: center;
+}
+.weather-forecast {
+   margin-top: 20px;
+   text-align: center;
+   
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.6;
+}
+.weather-forecast-temperature-max {
+  opacity: 0.6
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
